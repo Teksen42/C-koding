@@ -1,0 +1,37 @@
+Write a program segment that computes 1 + 2 + 3 + ... + (n - 1) + n,
+where n is a data value. Follow the loop body with an if statement that compares this value to (n * (n + 1)) / 2 and displays a message that indicates
+whether the values are the same or different. What message do you think
+will be displayed?
+
+#include stdio.h
+
+int main(void){
+
+    int n, i, sum=0, sum2=0;
+
+    printf(Indtast en værdin);
+    scanf(%d, &n);
+
+
+    
+    for(i=1; i=n ; i++)
+    {
+        sum += i;
+        printf(%d, i);
+        if (i  n){
+            printf(+);
+        }
+    }
+    
+    printf(=%dn, sum);
+    
+    sum2= (n(n+1))2;
+    printf((%d(%d+1))2=%dn, n, n, sum2);
+    
+    
+    if (sum == sum2){
+    printf(Begge regnestykker giver det sammen);
+    }
+    
+    return(0);
+}

@@ -1,0 +1,19 @@
+/*There are 9,870 people in a town whose population increases by 10% each year. 
+Write a loop that displays the annual population and determines how many years 
+(count_years) it will take for the population to surpass 30,000*/
+
+#include <stdio.h>
+
+
+
+int main(void){
+    int people=9870, count_years = 0;
+
+    while (people < 30000){
+    people = people*1.1;
+    count_years++;
+}
+    printf ("Der går %d år indtil populationen er over 30000", count_years);
+
+    return(0);
+}
