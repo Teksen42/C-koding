@@ -25,7 +25,7 @@ int main(void){
     int h100, h50, t20, t10;
     printf("Indtast det belob du vil haeve. Belobet skal vaere helt tal, og dividerbart med 10.\n");
     scanf("%d", &total);
-    if (total%10 == 0)
+    if (total > 0 && total % 10 == 0)
     {   
         regne_penge(total, &h100, &h50, &t20, &t10);
         printf("Dine penge bliver haevet nu \n");
